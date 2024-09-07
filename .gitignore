@@ -70,3 +70,6 @@ stamp-*
 /gmp*
 /isl*
 /gettext*
+
+# ENLYZE: ignore the winsup directory that our build script creates
+winsup
