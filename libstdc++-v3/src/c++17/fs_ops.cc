@@ -22,6 +22,8 @@
 // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 // <http://www.gnu.org/licenses/>.
 
+#ifndef UNDER_CE
+
 #ifndef _GLIBCXX_USE_CXX11_ABI
 # define _GLIBCXX_USE_CXX11_ABI 1
 # define NEED_DO_COPY_FILE
@@ -1701,3 +1703,5 @@ fs::weakly_canonical(const path& p, error_code& ec)
     }
   return result;
 }
+
+#endif
