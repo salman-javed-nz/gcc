@@ -22,6 +22,8 @@
 // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 // <http://www.gnu.org/licenses/>.
 
+#ifndef UNDER_CE
+
 #include <span>
 #include <string>
 #include <streambuf>
@@ -357,3 +359,5 @@ namespace
   }
 _GLIBCXX_END_NAMESPACE_VERSION
 } // namespace std
+
+#endif
