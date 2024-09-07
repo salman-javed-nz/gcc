@@ -61,7 +61,9 @@ namespace std
   using ::time_t;
   using ::tm;
 
+#ifndef UNDER_CE
   using ::clock;
+#endif
   using ::difftime;
   using ::mktime;
   using ::time;
