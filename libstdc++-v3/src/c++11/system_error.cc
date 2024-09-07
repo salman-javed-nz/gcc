@@ -110,7 +110,12 @@ namespace
 #else
   string strerror_string(int err)
   {
+#ifndef UNDER_CE
     return strerror(err); // XXX Not thread-safe.
+#else
+    (void) err;
+    return {};
+#endif
   }
 #endif
 
